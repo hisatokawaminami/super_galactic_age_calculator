@@ -6,4 +6,7 @@ describe('Birthday', function(){
     expect(accurateBirthday.getAge()).toEqual(29);
 
   });
+
+  it('should take tow dates and determine the differenc in seconds', function(){
+});
 });

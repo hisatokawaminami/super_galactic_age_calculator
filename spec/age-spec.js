@@ -3,10 +3,12 @@ describe('Age', function(){
 
   it('should convert age(years) into seconds', function(){
     let ageInSeconds = new Age(29);
-    expect(ageInSeconds.ageInSeconds(29)).toEqual(915170400);
+    expect(ageInSeconds.inSeconds()).toEqual(915170400);
   });
 
-  it('should take tow dates and determine the differenc in seconds', function(){
+  it('should convert age into Mercury years', function(){
+    let ageInMercury = new Age(29);
+    expect(ageInMercury.inMercury()).toEqual(121);
+  });
 
-  })
 });

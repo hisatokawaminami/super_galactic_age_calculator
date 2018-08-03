@@ -12,6 +12,11 @@ export class Birthday {
     let birthday = new Date(this.year, this.month, this.date);
     console.log(birthday);
     let age = today.getFullYear() - birthday.getFullYear();
+    let m = today.getMonth() - birthday.getMonth();
+    console.log(m);
+    if (m < 0) {
+      age--;
+    }
     console.log(age)
     return age;
 
