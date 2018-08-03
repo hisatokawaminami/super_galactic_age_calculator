@@ -17,4 +17,12 @@ export class Age {
     console.log(fixedAge);
     return fixedAge;
   }
+
+  inVenus(){
+    let ageInVenus = (this.age / 0.62).toFixed();
+    let fixedAge = parseFloat(ageInVenus);
+    console.log(fixedAge);
+    return fixedAge;
+  }
+
 }

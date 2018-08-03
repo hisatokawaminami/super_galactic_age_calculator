@@ -11,4 +11,8 @@ describe('Age', function(){
     expect(ageInMercury.inMercury()).toEqual(121);
   });
 
+  it('should convert age into Venus years', function(){
+    let ageInVenus = new Age(29);
+    expect(ageInVenus.inVenus()).toEqual(47)
+  });
 });
