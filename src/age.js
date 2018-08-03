@@ -25,4 +25,17 @@ export class Age {
     return fixedAge;
   }
 
+  inMars(){
+    let ageInMars = (this.age / 1.88).toFixed();
+    let fixedAge = parseFloat(ageInMars);
+    console.log(fixedAge);
+    return fixedAge;
+  }
+
+  inJupiter(){
+    let ageInJupiter = (this.age / 11.86).toFixed();
+    let fixedAge = parseFloat(ageInJupiter);
+    console.log(fixedAge);
+    return fixedAge;
+  }
 }
