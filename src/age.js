@@ -3,9 +3,11 @@ export class Age{
     this.age = age;
   }
 
-  ageInSeconds() {
-    let ageInSeconds = age * 31557600;
+  ageInSeconds(age) {
+    let ageInSeconds = (age * 31557600);
+    console.log(ageInSeconds);
+
     return ageInSeconds;
   }
+
 }
- 
