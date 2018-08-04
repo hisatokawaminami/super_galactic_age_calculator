@@ -6,7 +6,6 @@ export class Birthday {
   }
 
   getAge() {
-
     let today = new Date();
     console.log(today.getFullYear());
     let birthday = new Date(this.year, this.month, this.date);

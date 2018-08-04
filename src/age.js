@@ -11,7 +11,7 @@ export class Age {
   }
 
   inMercury(){
-    let ageInMercury = (this.age / 0.24).toFixed();
+    let ageInMercury = (this.age / 0.24).toFixed(2);
     let fixedAge = parseFloat(ageInMercury);
     console.log(ageInMercury);
     console.log(fixedAge);
@@ -19,21 +19,21 @@ export class Age {
   }
 
   inVenus(){
-    let ageInVenus = (this.age / 0.62).toFixed();
+    let ageInVenus = (this.age / 0.62).toFixed(2);
     let fixedAge = parseFloat(ageInVenus);
     console.log(fixedAge);
     return fixedAge;
   }
 
   inMars(){
-    let ageInMars = (this.age / 1.88).toFixed();
+    let ageInMars = (this.age / 1.88).toFixed(2);
     let fixedAge = parseFloat(ageInMars);
     console.log(fixedAge);
     return fixedAge;
   }
 
   inJupiter(){
-    let ageInJupiter = (this.age / 11.86).toFixed();
+    let ageInJupiter = (this.age / 11.86).toFixed(2);
     let fixedAge = parseFloat(ageInJupiter);
     console.log(fixedAge);
     return fixedAge;
