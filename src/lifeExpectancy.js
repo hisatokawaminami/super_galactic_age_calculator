@@ -1,4 +1,5 @@
-export class LifeExpectancy {
+export class LifeExpectancy{
+
   constructor(smoker, gender){
     this.smoker = smoker;
     this.gender = gender;
@@ -19,6 +20,10 @@ export class LifeExpectancy {
       console.log(lifeExpectancy);
       return lifeExpectancy;
 
-    
+    // inMercuryLE() {
+    //   let lifeExpectancy = this.age.LifeExpectancyCal();
+    //   console.log(lifeExpectancy);
+
+    // }
   }
 }
