@@ -1,24 +1,25 @@
-export class LifeExpectancy{
+import { Age }  from './../src/age.js';
+export class LifeExpectancy extends Age{
 
-  constructor(smoker, gender){
+  constructor(age, smoker, gender){
+    super(age)
     this.smoker = smoker;
     this.gender = gender;
-
   }
 
   LifeExpectancyCal() {
-    let lifeExpectancy = 79;
+    let lifeExpectancyIndex = 79;
     if (this.smoker === false){
-      lifeExpectancy += 2;
+      lifeExpectancyIndex += 2;
       } if (this.smoker === true){
-          lifeExpectancy -=10;
+          lifeExpectancyIndex -=10;
         } if (this.gender === 'female'){
-          lifeExpectancy += 3;
+          lifeExpectancyIndex += 3;
           } if (this.gender === 'male'){
-            lifeExpectancy -= 5;
+            lifeExpectancyIndex -= 5;
           }
-      console.log(lifeExpectancy);
-      return lifeExpectancy;
+      console.log(lifeExpectancyIndex);
+      return lifeExpectancyIndex;
 
     // inMercuryLE() {
     //   let lifeExpectancy = this.age.LifeExpectancyCal();

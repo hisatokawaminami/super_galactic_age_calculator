@@ -16,12 +16,12 @@ describe('Age', function(){
     expect(ageInVenus.inVenus()).toEqual(46.77);
   });
 
-  it('should conver age into Mars years', function(){
+  it('should convert age into Mars years', function(){
     let ageInMars = new Age(29);
     expect(ageInMars.inMars()).toEqual(15.43);
   });
 
-  it('should conver age into Jupiter years', function(){
+  it('should convert age into Jupiter years', function(){
     let ageInJupiter = new Age(29);
     expect(ageInJupiter.inJupiter()).toEqual(2.45);
   });
