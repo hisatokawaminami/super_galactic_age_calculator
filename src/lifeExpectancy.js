@@ -19,6 +19,9 @@ export class LifeExpectancy extends Age{
             lifeExpectancyIndex -= 5;
           }
           let lifeExpectancy = lifeExpectancyIndex - this.getAge();
+          if (lifeExpectancy < 0){
+            lifeExpectancy *= -1;
+          }
           console.log(lifeExpectancyIndex);
           console.log(lifeExpectancy);
       return lifeExpectancy;
